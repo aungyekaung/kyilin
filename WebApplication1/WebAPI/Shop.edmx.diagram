@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d6dfb6b3d2f2435e97a11e39ce67d78d" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopModel.Category" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Invoice" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Item" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Order" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Position" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Promotion" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Staff" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Table" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Table_Type" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="ShopModel.FK_Item_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Invoice_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Order_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Item_Promotion" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Order_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Order_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Order_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Staff_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Table_Table_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
